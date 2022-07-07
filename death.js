@@ -1,4 +1,4 @@
-let authority = { address: '8.8.8.8', port: 53, type: 'udp' };
+let authority = { address: '107.20.49.154', port: 53, type: 'udp' };
 
 function proxy(question, response, cb) {
   console.log('proxying', question.name);
@@ -72,5 +72,3 @@ entry[0].records.forEach(record => {
   }
   response.answer.push(dns[record.type](record));
 });
-
-
